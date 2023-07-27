@@ -27,7 +27,7 @@ Similarly, in Node.js, when it receives requests from users or needs to perform 
 
 This event-driven asynchronous approach in Node.js allows the program to handle many tasks or requests simultaneously, just like a chef managing and cooking multiple orders at once in a bustling restaurant. It makes Node.js highly responsive and efficient, making it a powerful tool for building fast and scalable applications.
 
-Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency
+## Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency
 
 Imagine you have two ways to handle many tasks at once, like helping lots of people with their questions.
 
@@ -42,7 +42,7 @@ So, Node.js is excellent for quickly handling many tasks at once, like real-time
 
 To install Node.js, you can follow these steps depending on your operating system:
 
-1. Install Node.js on Windows:
+- 1. Install Node.js on Windows:
 
 Visit the official Node.js website: https://nodejs.org
 On the homepage, you will see two versions available for download: LTS (Long Term Support) and Current. For most users, it's recommended to download the LTS version as it is more stable.
@@ -51,7 +51,7 @@ Run the downloaded installer and follow the installation wizard.
 During the installation, you can choose the default settings or customize the installation path if needed.
 Once the installation is complete, you can verify the installation by opening the Command Prompt or PowerShell and typing node -v and npm -v to check the installed Node.js version and npm (Node Package Manager) version, respectively.
 
-2. Install Node.js on macOS:
+- 2. Install Node.js on macOS:
 
 Visit the official Node.js website: https://nodejs.org
 On the homepage, you will see two versions available for download: LTS (Long Term Support) and Current. For most users, it's recommended to download the LTS version as it is more stable.
@@ -59,7 +59,7 @@ Click on the "LTS" button to download the installer for the LTS version.
 Run the downloaded installer and follow the installation wizard.
 Once the installation is complete, you can verify the installation by opening Terminal and typing node -v and npm -v to check the installed Node.js version and npm version, respectively.
 
-3. Install Node.js on Linux:
+- 3. Install Node.js on Linux:
 
 The method to install Node.js on Linux can vary based on the distribution you are using. Below are some general instructions:
 
