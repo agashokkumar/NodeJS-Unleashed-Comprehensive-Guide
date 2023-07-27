@@ -1,9 +1,9 @@
 ## Contents
 
-- [Why Node JS](#Node.js: Efficient and Scalable JavaScript Runtime for Web Applications)
-- [In Simple Terms)(#Node.js: Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach )
+- [Why Node JS](## Efficient and Scalable JavaScript Runtime for Web Applications)
+- [In Simple Terms)(## Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach )
 
-## Node.js: Efficient and Scalable JavaScript Runtime for Web Applications
+## Efficient and Scalable JavaScript Runtime for Web Applications
 
 Node.js is an open-source, server-side runtime environment built on the V8 JavaScript engine developed by Google for use in Chrome web browsers. It allows developers to run JavaScript code outside of a web browser, making it possible to use JavaScript for server-side scripting and building scalable network applications.
 
@@ -15,7 +15,7 @@ Node.js has a vibrant ecosystem with a vast array of third-party packages availa
 
 Overall, Node.js has become immensely popular and widely adopted for web development due to its speed, scalability, and flexibility, making it a powerful tool for building modern, real-time web applications and services.
 
-## Node.js: Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach
+## Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach
 
 Imagine you are a chef in a busy restaurant, and many orders are coming in from different tables.
 
