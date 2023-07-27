@@ -1,7 +1,8 @@
 ## Contents
  
-- [Efficient and Scalable JavaScript Runtime for Web Applications](# Why to consider Node JS )
-- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](# In Simple Terms)
+- [Efficient and Scalable JavaScript Runtime for Web Applications](Efficient-and-Scalable-JavaScript-Runtime-for-Web-Applications)
+- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](Efficiently-Handling-Tasks-with-an-Event-Driven-,Asynchronous-Approach)
+- [Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency](Handling-Tasks-with-Speed-and-Efficiency)
 
 ## Efficient and Scalable JavaScript Runtime for Web Applications
 
@@ -27,7 +28,7 @@ Similarly, in Node.js, when it receives requests from users or needs to perform 
 
 This event-driven asynchronous approach in Node.js allows the program to handle many tasks or requests simultaneously, just like a chef managing and cooking multiple orders at once in a bustling restaurant. It makes Node.js highly responsive and efficient, making it a powerful tool for building fast and scalable applications.
 
-## Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency
+## Handling Tasks with Speed and Efficiency
 
 Imagine you have two ways to handle many tasks at once, like helping lots of people with their questions.
 
