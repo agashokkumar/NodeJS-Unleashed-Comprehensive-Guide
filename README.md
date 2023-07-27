@@ -1,7 +1,7 @@
 ## Contents
-
-- [Why Node JS](## Efficient and Scalable JavaScript Runtime for Web Applications)
-- [In Simple Terms)(## Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach )
+ 
+- [Efficient and Scalable JavaScript Runtime for Web Applications](# Why to consider Node JS )
+- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](# In Simple Terms)
 
 ## Efficient and Scalable JavaScript Runtime for Web Applications
 
