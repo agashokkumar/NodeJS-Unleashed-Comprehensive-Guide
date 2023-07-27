@@ -84,9 +84,9 @@ To switch to the LTS version:
 nvm use --lts
 You can verify the installation by typing node -v and npm -v.
 Whichever method you choose, once Node.js is installed, you can start building and running Node.js applications on your system.
-
+```
 ## How to create an Express Node.js application:
-
+```
 Begin by creating a new directory for your project and navigate to it:
 mkdir my-express-app
 cd my-express-app
@@ -138,7 +138,7 @@ my-node-app/
   |- package.json
 ```
 Explanation of the Package Structure:
-
+```
 app/: This directory contains the core components of your Node.js application.
 controllers/: Store the logic for handling HTTP requests and responses. Each controller file should correspond to specific routes or groups of related routes.
 models/: Define data models and manage interactions with the database or other data sources.
@@ -151,10 +151,10 @@ node_modules/: The folder where npm installs dependencies for your project. This
 app.js (or index.js): The main entry point of your Node.js application, where you initialize the app and set up middleware.
 package.json: The file that holds metadata about your project and its dependencies.
 By adhering to this package structure, you can maintain a well-organized application as it grows. Separating concerns into distinct directories makes your codebase more modular, scalable, and easier to maintain. As your app becomes more complex, you can expand each directory and introduce additional ones to cater to specific functionalities.
-
+```
 ## Key Dependencies
 Here are all the dependencies, including npm packages for a Node.js Express app, along with the REST client (axios) and JSON parser (body-parser):
-
+```
 less
 Copy code
 npm install express       // Express.js web framework
@@ -170,6 +170,7 @@ npm install mongoose      // ODM for MongoDB (optional)
 npm install sequelize     // ORM for SQL databases (optional)
 npm install passport      // Authentication middleware (optional)
 npm install morgan        // Logging middleware (optional)
+```
 Remember, the inclusion of some packages like ejs, pug, mongodb, mongoose, sequelize, passport, and morgan depends on the specific requirements of your project. Install only the packages you need for your Node.js Express application.
 
 How to unit test node js express app:
@@ -178,9 +179,7 @@ Unit testing is essential to ensure the correctness and reliability of your Node
 
 Step 1: Install Testing Dependencies:
 In your project directory, install the testing frameworks and related dependencies using npm or yarn:
-
-bash
-Copy code
+```
 npm install mocha chai supertest --save-dev
 mocha: The testing framework that allows you to define and run tests.
 chai: An assertion library that provides various assertion styles to make your tests more expressive.
@@ -190,11 +189,9 @@ To make your app testable, it's a good practice to create separate modules for r
 
 Step 3: Write Test Cases:
 Create test files with .test.js or .spec.js extensions in a separate directory, for example, tests/. In these files, define the test cases for the various components of your app.
-
+```
 Here's an example test case using Mocha, Chai, and Supertest:
 
-javascript
-Copy code
 // tests/app.test.js
 
 const chai = require('chai');
@@ -222,8 +219,6 @@ describe('Example Route Tests', () => {
 Step 4: Run Tests:
 To run the tests, execute the following command in your terminal:
 
-bash
-Copy code
 npx mocha tests/*.test.js
 The test runner (Mocha) will run all the test files ending with .test.js in the tests/ directory.
 
@@ -237,7 +232,6 @@ By following these steps and writing comprehensive unit tests, you can gain conf
 Here are all the dependencies, including npm packages for a Node.js Express app, along with the REST client (axios) and JSON parser (body-parser):
 
 less
-Copy code
 npm install express       // Express.js web framework
 npm install body-parser   // Middleware for parsing JSON and URL-encoded data
 npm install compression   // Middleware for gzip compression
@@ -262,7 +256,7 @@ Callbacks represent the traditional method for handling asynchronous operations 
 They involve passing a function as an argument to an asynchronous function, which gets executed upon completion of the operation.
 Callbacks allow you to handle the result or error of the operation within the callback function.
 Example using callbacks:
-
+```
 javascript
 function fetchData(callback) {
   // Simulate an asynchronous operation
@@ -276,12 +270,13 @@ function fetchData(callback) {
 fetchData((data) => {
   console.log(data); // Output: { name: 'John', age: 30 }
 });
+```
 Promises:
 Promises offer a more modern approach to managing asynchronous operations in JavaScript.
 A Promise represents a value that may not be available immediately but will resolve to a value (or error) in the future.
 Promises provide methods like then() and catch() to handle the resolved value or error.
 Example using Promises:
-
+```
 javascript
 function fetchData() {
   return new Promise((resolve, reject) => {
@@ -301,13 +296,14 @@ fetchData()
   .catch((error) => {
     console.error(error);
   });
+```
 Async/Await:
 Async/await is a syntax introduced in ES2017 (ES8) that makes handling Promises more concise and readable.
 By using the async keyword before a function declaration, it indicates that the function contains asynchronous operations.
 The await keyword is used before a Promise to pause the execution of the function until the Promise is resolved.
 Example using async/await:
 
-javascript
+```
 function fetchData() {
   return new Promise((resolve) => {
     // Simulate an asynchronous operation
@@ -329,6 +325,7 @@ async function fetchDataAsync() {
 }
 
 fetchDataAsync();
+```
 In conclusion, callbacks are the traditional method, Promises offer a more modern approach, and async/await provides a cleaner syntax for handling asynchronous operations in JavaScript and TypeScript. While each approach serves the same purpose, the choice depends on personal preference and the project's specific requirements. Async/await is generally considered the most readable and straightforward option for managing asynchronous code in modern JavaScript applications.
 
 
