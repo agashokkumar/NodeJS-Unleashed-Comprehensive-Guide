@@ -1,4 +1,9 @@
-Node.js: Efficient and Scalable JavaScript Runtime for Web Applications
+## Contents
+
+- [Why Node JS](#Node.js: Efficient and Scalable JavaScript Runtime for Web Applications)
+- [In Simple Terms)(#Node.js: Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach )
+
+## Node.js: Efficient and Scalable JavaScript Runtime for Web Applications
 
 Node.js is an open-source, server-side runtime environment built on the V8 JavaScript engine developed by Google for use in Chrome web browsers. It allows developers to run JavaScript code outside of a web browser, making it possible to use JavaScript for server-side scripting and building scalable network applications.
 
@@ -10,7 +15,7 @@ Node.js has a vibrant ecosystem with a vast array of third-party packages availa
 
 Overall, Node.js has become immensely popular and widely adopted for web development due to its speed, scalability, and flexibility, making it a powerful tool for building modern, real-time web applications and services.
 
-"Node.js: Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach"
+## Node.js: Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach
 
 Imagine you are a chef in a busy restaurant, and many orders are coming in from different tables.
 
@@ -33,7 +38,7 @@ Multi-threaded Java is like having a group of helpers, where each helper can han
 So, Node.js is excellent for quickly handling many tasks at once, like real-time applications or chat services. On the other hand, multi-threaded Java is better for handling more complex tasks that need a lot of calculations or data processing. The choice depends on what kind of tasks you need to handle.
 
 
-How to install Nodejs#
+## How to install Nodejs#
 
 To install Node.js, you can follow these steps depending on your operating system:
 
@@ -88,7 +93,7 @@ nvm use --lts
 You can verify the installation by typing node -v and npm -v.
 Whichever method you choose, once Node.js is installed, you can start building and running Node.js applications on your system.
 
-How to create an Express Node.js application:
+## How to create an Express Node.js application:
 
 Begin by creating a new directory for your project and navigate to it:
 perl
@@ -127,7 +132,7 @@ Access your Express app by opening a web browser and navigating to http://localh
 With these steps, you've successfully set up a basic Express Node.js application. From here, you can further develop your app by adding more routes, middleware, and integrating it with databases or other services. The official Express documentation offers a wealth of resources to help you build powerful and feature-rich applications: https://expressjs.com/.
 
 
-Node.js Project Structure:
+## Node.js Project Structure:
 
 create a well-organized package structure for your Node.js app, follow the suggested layout:
 
@@ -162,6 +167,7 @@ app.js (or index.js): The main entry point of your Node.js application, where yo
 package.json: The file that holds metadata about your project and its dependencies.
 By adhering to this package structure, you can maintain a well-organized application as it grows. Separating concerns into distinct directories makes your codebase more modular, scalable, and easier to maintain. As your app becomes more complex, you can expand each directory and introduce additional ones to cater to specific functionalities.
 
+## Key Dependencies
 Here are all the dependencies, including npm packages for a Node.js Express app, along with the REST client (axios) and JSON parser (body-parser):
 
 less
@@ -262,7 +268,7 @@ npm install passport      // Authentication middleware (optional)
 npm install morgan        // Logging middleware (optional)
 Remember, the inclusion of some packages like ejs, pug, mongodb, mongoose, sequelize, passport, and morgan depends on the specific requirements of your project. Install only the packages you need for your Node.js Express application.
 
-"Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await"
+## Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await
 
 Asynchronous operations in JavaScript and TypeScript can be managed through different techniques: callbacks, Promises, and async/await. Each approach serves the purpose of handling non-blocking tasks but with varying syntax and methodologies. Let's explore these differences:
 
