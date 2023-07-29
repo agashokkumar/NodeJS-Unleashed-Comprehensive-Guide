@@ -7,7 +7,7 @@
 - [How to install Nodejs](How-to-install-Nodejs)
 - [Node.js Project Structure](Node.js-Project-Structure)
 - [How to create an Express Node.js application](How to create an Express Node.js application:)
-- [Node.js Project Structure:](Node.js-Project-Structure:)\
+- [Node.js Project Structure:](Node.js-Project-Structure:)
 - [Key Dependencies](Key Dependencies)
 - [How to unit test node js express app:](How-to-unit-test-node-js-express-app:)
 - [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await)
