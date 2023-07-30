@@ -2,10 +2,10 @@
 ## Contents
  
 - [Efficient and Scalable JavaScript Runtime for Web Applications](#efficient-and-scalable-javaScript-runtime-for-web-applications)
-- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](Efficiently-Handling-Tasks-with-an-Event-Driven-,Asynchronous-Approach)
-- [Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency](Handling-Tasks-with-Speed-and-Efficiency)
-- [How to install Nodejs](How-to-install-Nodejs)
-- [Node.js Project Structure](Node.js-Project-Structure)
+- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](#efficiently-handling-tasks-with-an-event-driven-,asynchronous-approach)
+- [Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency](#handling-tasks-with-speed-and-efficiency)
+- [How to install Nodejs](#how-to-install-nodejs)
+- [Node.js Project Structure](#node.js-project-structure)
 - [How to create an Express Node.js application](How to create an Express Node.js application:)
 - [Node.js Project Structure:](Node.js-Project-Structure:)
 - [Key Dependencies](Key Dependencies)
