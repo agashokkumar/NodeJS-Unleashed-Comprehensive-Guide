@@ -2,15 +2,15 @@
 ## Contents
  
 - [Efficient and Scalable JavaScript Runtime for Web Applications](#efficient-and-scalable-javaScript-runtime-for-web-applications)
-- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](#efficiently-handling-tasks-with-an-event-driven,asynchronous-approach)
+- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](#efficiently-handling-tasks-with-an-event-driven-asynchronous-approach)
 - [Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency](#handling-tasks-with-speed-and-efficiency)
 - [How to install Nodejs](#how-to-install-nodejs)
 - [Node.js Project Structure](#node.js-project-structure)
 - [How to create an Express Node.js application](#how-to-create-an-express-node.js-application)
-- [Node.js Project Structure:](#-node.js-project-structure)
+- [Node.js Project Structure](#-node.js-project-structure)
 - [Key Dependencies](#key-dependencies)
-- [How to unit test node js express app:](#how-to-unit-test-node-js-express-app)
-- [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javaScript-and-typeScript-callbacks,-promises,-and-async/await)
+- [How to unit test node js express app](#how-to-unit-test-node-js-express-app)
+- [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javaScript-and-typeScript-callbacks-promises-and-async/await)
 
 ## Efficient and Scalable JavaScript Runtime for Web Applications
 
