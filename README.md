@@ -2,15 +2,15 @@
 ## Contents
  
 - [Efficient and Scalable JavaScript Runtime for Web Applications](#efficient-and-scalable-javaScript-runtime-for-web-applications)
-- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](#efficiently-handling-tasks-with-an-event-driven-,asynchronous-approach)
+- [Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach](#efficiently-handling-tasks-with-an-event-driven,asynchronous-approach)
 - [Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency](#handling-tasks-with-speed-and-efficiency)
 - [How to install Nodejs](#how-to-install-nodejs)
 - [Node.js Project Structure](#node.js-project-structure)
-- [How to create an Express Node.js application](How to create an Express Node.js application:)
-- [Node.js Project Structure:](Node.js-Project-Structure:)
-- [Key Dependencies](Key Dependencies)
-- [How to unit test node js express app:](How-to-unit-test-node-js-express-app:)
-- [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await)
+- [How to create an Express Node.js application](#how-to-create-an-express-node.js-application)
+- [Node.js Project Structure:](#-node.js-project-structure)
+- [Key Dependencies](#key-dependencies)
+- [How to unit test node js express app:](#how-to-unit-test-node-js-express-app)
+- [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javaScript-and-typeScript-callbacks,-promises,-and-async/await)
 
 ## Efficient and Scalable JavaScript Runtime for Web Applications
 
@@ -94,7 +94,7 @@ nvm use --lts
 You can verify the installation by typing node -v and npm -v.
 Whichever method you choose, once Node.js is installed, you can start building and running Node.js applications on your system.
 ```
-## How to create an Express Node.js application:
+## How to create an Express Node.js application
 ```
 Begin by creating a new directory for your project and navigate to it:
 mkdir my-express-app
@@ -126,7 +126,7 @@ Access your Express app by opening a web browser and navigating to http://localh
 With these steps, you've successfully set up a basic Express Node.js application. From here, you can further develop your app by adding more routes, middleware, and integrating it with databases or other services. The official Express documentation offers a wealth of resources to help you build powerful and feature-rich applications: https://expressjs.com/.
 
 
-## Node.js Project Structure:
+## Node.js Project Structure
 
 create a well-organized package structure for your Node.js app, follow the suggested layout:
 ```
