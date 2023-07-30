@@ -10,7 +10,7 @@
 - [Node.js Project Structure](#-node.js-project-structure)
 - [Key Dependencies](#key-dependencies)
 - [How to unit test node js express app](#how-to-unit-test-node-js-express-app)
-- [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javaScript-and-typeScript-callbacks-promises-and-async/await)
+- [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javascript-and-typescript-callbacks-promises-and-async/await)
 
 ## Efficient and Scalable JavaScript Runtime for Web Applications
 
