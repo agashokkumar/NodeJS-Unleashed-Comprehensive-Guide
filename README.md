@@ -464,7 +464,7 @@ server {
 }
 ```
 
-## Seamless Deployments to EC2/ECS/EKS: Efficiently Scaling and Managing Applications on AWS
+## Seamless Deployments to EC2, ECS, and EKS: Efficiently Scaling and Managing Applications on AWS
 
 ### Amazon EC2 Deployment:
 
