@@ -6,7 +6,7 @@
 - [Comparing Node.js and Multi-Threaded Java: Handling Tasks with Speed and Efficiency](#handling-tasks-with-speed-and-efficiency)
 - [How to install Nodejs](#how-to-install-nodejs)
 - [Essential Node.js Modules: Building Robust Applications with Reusable Code](#Essential-Nodejs-Modules-Building-Robust-Applications-with-Reusable-Code)
-- [Node Package Manager (NPM): Simplifying Package Management in Node.js Projects](#Node-Package-Manager-(NPM)-Simplifying-Package-Management-in-Nodejs-Projects)
+- [Node Package Manager (NPM): Simplifying Package Management in Node.js Projects](#Node-Package-Manager-NPM-Simplifying-Package-Management-in-Nodejs-Projects)
 - [Node.js Project Structure](#nodejs-project-structure)
 - [How to create an Express Node.js application](#how-to-create-an-express-nodejs-application)
 - [Key Dependencies](#key-dependencies)
