@@ -10,7 +10,7 @@
 - [Understanding package.json and package-lock.json in Node.js Projects](#Understanding-packagejson-and-package-lockjson-in-Nodejs-Projects)
 - [Node.js Project Structure](#nodejs-project-structure)
 - [How to create an Express Node.js application](#how-to-create-an-express-nodejs-application)
-- [Key Dependencies](#key-dependencies)
+- [Key Dependencies for a Node.js Express App: Essential Packages and Optional Components](#Key-Dependencies-for-a-Nodejs-Express-App-Essentia-Packages-and-Optional-Components)
 - [How to unit test node js express app](#how-to-unit-test-node-js-express-app)
 - [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javascript-and-typescript-callbacks-promises-and-asyncawait)
 - [How to dockerize NodeJS App](#How-to-dockerize-NodeJS-App)
@@ -216,24 +216,23 @@ Explanation of the Package Structure:
 - package.json: The file that holds metadata about your project and its dependencies.
 By adhering to this package structure, you can maintain a well-organized application as it grows. Separating concerns into distinct directories makes your codebase more modular, scalable, and easier to maintain. As your app becomes more complex, you can expand each directory and introduce additional ones to cater to specific functionalities.
 
-## Key Dependencies
-Here are all the dependencies, including npm packages for a Node.js Express app, along with the REST client (axios) and JSON parser (body-parser):
+## Key Dependencies for a Node.js Express App: Essential Packages and Optional Components
+Below are the key dependencies, including npm packages, commonly used in a Node.js Express app along with the REST client (axios) and JSON parser (body-parser):
 ```
-less
-Copy code
-npm install express       // Express.js web framework
-npm install body-parser   // Middleware for parsing JSON and URL-encoded data
-npm install compression   // Middleware for gzip compression
-npm install cookie-parser // Middleware for parsing cookies
-npm install axios         // REST client for making HTTP requests
-npm install ejs           // Template engine for rendering dynamic content (optional)
-npm install pug           // Template engine for rendering dynamic content (optional)
-npm install express-handlebars // Template engine for rendering dynamic content (optional)
-npm install mongodb       // MongoDB driver for database connectivity (optional)
-npm install mongoose      // ODM for MongoDB (optional)
-npm install sequelize     // ORM for SQL databases (optional)
-npm install passport      // Authentication middleware (optional)
-npm install morgan        // Logging middleware (optional)
+- express: Express.js web framework
+- body-parser: Middleware for parsing JSON and URL-encoded data
+- compression: Middleware for gzip compression
+- cookie-parser: Middleware for parsing cookies
+- axios: REST client for making HTTP requests
+- ejs (optional): Template engine for rendering dynamic content
+- pug (optional): Template engine for rendering dynamic content
+- express-handlebars (optional): Template engine for rendering dynamic content
+- mongodb (optional): MongoDB driver for database connectivity
+- mongoose (optional): ODM for MongoDB
+- sequelize (optional): ORM for SQL databases
+- passport (optional): Authentication middleware
+- morgan (optional): Logging middleware
+
 ```
 Remember, the inclusion of some packages like ejs, pug, mongodb, mongoose, sequelize, passport, and morgan depends on the specific requirements of your project. Install only the packages you need for your Node.js Express application.
 
