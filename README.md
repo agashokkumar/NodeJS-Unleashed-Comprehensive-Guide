@@ -604,27 +604,27 @@ resource "aws_ecs_service" "example_service" {
 
 Deploying a Node.js app to Amazon EKS (Elastic Kubernetes Service) involves the following steps:
 
-1- Containerize Your Node.js App:
+1. Containerize Your Node.js App:
 Package your Node.js app into a Docker container. Create a Dockerfile similar to the one we discussed earlier in this conversation. Build and test the Docker image locally.
-1- Create an ECR Repository (Optional):
+1. Create an ECR Repository (Optional):
 If you want to use Amazon ECR (Elastic Container Registry) to store your Docker images, create an ECR repository to push your Docker image to it.
-1- Push Docker Image to ECR (Optional):
+1. Push Docker Image to ECR (Optional):
 If you're using ECR, authenticate your Docker client to the ECR registry and push your Docker image to the repository.
-1- Create an Amazon EKS Cluster:
+1. Create an Amazon EKS Cluster:
 Use the AWS Management Console, AWS CLI, or Terraform to create an EKS cluster. The cluster will consist of a managed Kubernetes control plane and worker nodes that run your containers.
-1- Install and Configure kubectl:
+1. Install and Configure kubectl:
 Install the kubectl command-line tool and configure it to connect to your EKS cluster.
-1- Deploy Your Node.js App to EKS:
+1. Deploy Your Node.js App to EKS:
 Create a Kubernetes Deployment YAML or Helm chart that defines your Node.js app's deployment configuration, including the Docker image, environment variables, container ports, etc.
-1- Apply the Kubernetes Configuration:
+1. Apply the Kubernetes Configuration:
 Use kubectl apply or helm install (if using Helm) to apply the Kubernetes configuration to your EKS cluster. This will create the necessary Kubernetes resources, such as Pods and Deployments, to run your app.
-1- Expose Your App with a Service:
+1. Expose Your App with a Service:
 Create a Kubernetes Service to expose your app to the internet or other services. You can use a LoadBalancer service type to get a public IP for your app, or use an Ingress controller to manage traffic and routing to your app.
-1- Set Up Security Groups and IAM Roles:
+1. Set Up Security Groups and IAM Roles:
 Configure security groups for your EKS worker nodes and set up IAM roles with appropriate permissions for your pods to access other AWS services if needed.
-1- Monitor and Troubleshoot:
+1. Monitor and Troubleshoot:
 Monitor your EKS cluster and app using Kubernetes tools like kubectl, kubectl logs, and kubectl describe. Use AWS CloudWatch and CloudTrail for additional monitoring and logging.
-1- Scaling and Upgrades:
+1. Scaling and Upgrades:
 EKS provides automatic scaling for your worker nodes based on the workload. Additionally, you can scale your app's replicas or update your app to a new version by applying new Kubernetes configurations.
 Remember to follow best practices for securing your EKS cluster, managing permissions, and optimizing performance. AWS provides several managed services and tools to simplify EKS deployments, such as AWS EKS Managed Node Groups, AWS Fargate for EKS, and AWS App Mesh for service mesh capabilities. These services can help streamline the deployment process and provide additional features for your Node.js app running on EKS.
 
