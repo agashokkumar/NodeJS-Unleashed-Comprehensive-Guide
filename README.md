@@ -37,9 +37,9 @@ Imagine you are a chef in a busy restaurant, and many orders are coming in from 
 
 - **Asynchronous:** While you are cooking a dish that takes some time, like baking a pizza, you don't just wait for it to be ready. Instead, you start preparing the next dish while the pizza is in the oven. This way, you can handle multiple orders simultaneously and make the best use of your time.
 
-- Similarly, in Node.js, when it receives requests from users or needs to perform time-consuming tasks like reading files or making network requests, it doesn't wait for each request to finish before handling the next one. It quickly notes down what needs to be done and moves on to the next task. Once the time-consuming tasks are done, Node.js goes back and completes the work for each request one by one, efficiently managing multiple tasks concurrently without getting stuck waiting.
+Similarly, in Node.js, when it receives requests from users or needs to perform time-consuming tasks like reading files or making network requests, it doesn't wait for each request to finish before handling the next one. It quickly notes down what needs to be done and moves on to the next task. Once the time-consuming tasks are done, Node.js goes back and completes the work for each request one by one, efficiently managing multiple tasks concurrently without getting stuck waiting.
 
-- This event-driven asynchronous approach in Node.js allows the program to handle many tasks or requests simultaneously, just like a chef managing and cooking multiple orders at once in a bustling restaurant. It makes Node.js highly responsive and efficient, making it a powerful tool for building fast and scalable applications.
+This event-driven asynchronous approach in Node.js allows the program to handle many tasks or requests simultaneously, just like a chef managing and cooking multiple orders at once in a bustling restaurant. It makes Node.js highly responsive and efficient, making it a powerful tool for building fast and scalable applications.
 
 ## Handling Tasks with Speed and Efficiency
 
