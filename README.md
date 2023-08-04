@@ -372,9 +372,9 @@ ARG APPID=<APP_NAME>: Defines an argument named "APPID" with a default value "<A
 1. SSL Termination: You can offload SSL encryption and decryption to the reverse proxy, relieving your Node.js app from the computational overhead of handling SSL/TLS connections. This enhances performance and allows your app to focus on handling application logic.
 1. Caching: By setting up caching on the reverse proxy, you can cache static assets or even dynamic responses from your Node.js app. This significantly reduces response times for repeated requests, resulting in improved user experience and reduced load on your app.
 1. Domain and Subdomain Handling: A reverse proxy can manage multiple domain names and subdomains pointing to different Node.js apps or services on the same server. This simplifies the setup for hosting multiple applications under the same domain.
-Scenario: You have a Node.js app serving a blog and an e-commerce store, and you want them accessible under separate domains.
+### Scenario: You have a Node.js app serving a blog and an e-commerce store, and you want them accessible under separate domains.
 
-Solution: Use a reverse proxy (e.g., Nginx) to configure domain-based routing:
+### Solution: Use a reverse proxy (e.g., Nginx) to configure domain-based routing:
 
 - Set up Nginx with two server blocks (virtual hosts) for each domain: www.myblog.com and shop.myecommercestore.com.
 Point the DNS records of the domains to your server's IP address.
