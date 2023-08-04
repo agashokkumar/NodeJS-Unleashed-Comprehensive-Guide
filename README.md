@@ -10,7 +10,7 @@
 - [Understanding package.json and package-lock.json in Node.js Projects](#Understanding-packagejson-and-package-lockjson-in-Nodejs-Projects)
 - [Node.js Project Structure](#nodejs-project-structure)
 - [How to create an Express Node.js application](#how-to-create-an-express-nodejs-application)
-- [Key Dependencies for a Node.js Express App: Essential Packages and Optional Components](#Key-Dependencies-for-a-Nodejs-Express-App-Essentia-Packages-and-Optional-Components)
+- [Key Dependencies for a Node.js Express App: Essential Packages and Optional Components](#Key-Dependencies-for-a-Nodejs-Express-App-Essential-Packages-and-Optional-Components)
 - [How to unit test node js express app](#how-to-unit-test-node-js-express-app)
 - [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javascript-and-typescript-callbacks-promises-and-asyncawait)
 - [How to dockerize NodeJS App](#How-to-dockerize-NodeJS-App)
