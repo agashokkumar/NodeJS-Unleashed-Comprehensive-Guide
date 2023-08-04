@@ -415,12 +415,12 @@ ARG APPID=<APP_NAME>: Defines an argument named "APPID" with a default value "<A
 
  When building the image, you can pass values for the "APPID" and "PORT" arguments if you have specific app names or port requirements.
 
- # Node.js App Deployment: The Power of Reverse Proxies
+ ## Node.js App Deployment: The Power of Reverse Proxies
  - A reverse proxy is an intermediary server that sits between client devices and backend servers. 
  - It receives client requests, forwards them to the appropriate backend server, and returns the response to the client. 
  - For Node.js apps, a reverse proxy is essential to improve security, handle load balancing, enable caching, and simplify domain and subdomain handling.   - It enhances the app's performance, scalability, and maintainability.
 
- # Unlocking the Power of Reverse Proxies
+ ## Unlocking the Power of Reverse Proxies
 
 1. Load Balancing: If your Node.js app receives a high volume of traffic, you can use a reverse proxy to distribute incoming requests among multiple instances of your app. This ensures efficient utilization of resources and better handling of increased traffic.
 1. SSL Termination: You can offload SSL encryption and decryption to the reverse proxy, relieving your Node.js app from the computational overhead of handling SSL/TLS connections. This enhances performance and allows your app to focus on handling application logic.
@@ -464,9 +464,9 @@ server {
 }
 ```
 
-# Deployments:
+## Deployments:
 
-## Amazon EC2 Deployment:
+### Amazon EC2 Deployment:
 
 Deploying a Node.js application to an Amazon EC2 instance using Docker involves the following steps:
 
