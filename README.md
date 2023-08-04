@@ -27,7 +27,7 @@
 
 - Node.js has a vibrant ecosystem with a vast array of third-party packages available through its package manager, npm, which makes it easy to integrate additional functionalities into your applications.
 
-- Overall, Node.js has become immensely popular and widely adopted for web development due to its speed, scalability, and flexibility, making it a powerful tool for building modern, real-time web applications and services.
+Overall, Node.js has become immensely popular and widely adopted for web development due to its speed, scalability, and flexibility, making it a powerful tool for building modern, real-time web applications and services.
 
 ## Efficiently Handling Tasks with an Event-Driven, Asynchronous Approach
 
