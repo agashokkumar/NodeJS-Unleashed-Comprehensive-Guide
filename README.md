@@ -377,9 +377,10 @@ ARG APPID=<APP_NAME>: Defines an argument named "APPID" with a default value "<A
 1. Centralized Logging and Monitoring: By routing all requests through the reverse proxy, you can gather centralized logs and metrics. This simplifies monitoring and analysis, making it easier to track application performance and troubleshoot issues.
 By employing a reverse proxy, you can take advantage of these practical benefits to optimize your Node.js app's deployment, enhance security, and ensure a smooth experience for your users.  
 1. Domain and Subdomain Handling: A reverse proxy can manage multiple domain names and subdomains pointing to different Node.js apps or services on the same server. This simplifies the setup for hosting multiple applications under the same domain.
-### Scenario: You have a Node.js app serving a blog and an e-commerce store, and you want them accessible under separate domains.
 
-### Solution: Use a reverse proxy (e.g., Nginx) to configure domain-based routing:
+- **Scenario:** You have a Node.js app serving a blog and an e-commerce store, and you want them accessible under separate domains.
+
+- **Solution:** Use a reverse proxy (e.g., Nginx) to configure domain-based routing:
 
 - Set up Nginx with two server blocks (virtual hosts) for each domain: www.myblog.com and shop.myecommercestore.com.
 Point the DNS records of the domains to your server's IP address.
