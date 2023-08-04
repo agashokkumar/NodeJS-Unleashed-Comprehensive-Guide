@@ -106,11 +106,11 @@ In Node.js, modules are reusable pieces of code that can be exported and importe
  - http: For creating HTTP servers and clients.
  - path: For handling file paths.
  - os: For interacting with the operating system.
-1. Third-party Modules: The Node.js ecosystem has a vast collection of third-party modules available through the npm (Node Package Manager) registry. These modules provide various functionalities, such as:
+2. Third-party Modules: The Node.js ecosystem has a vast collection of third-party modules available through the npm (Node Package Manager) registry. These modules provide various functionalities, such as:
  - Express.js: A popular web application framework for building web servers and APIs.
  - Mongoose: An ODM (Object Data Mapper) for MongoDB, simplifying database interactions.
  - Axios: A library for making HTTP requests to APIs.
-1. Custom Modules: You can create your own modules in Node.js to encapsulate and reuse specific pieces of functionality across your application. To create a custom module, use the module.exports or exports object to expose functions, objects, or classes.
+3. Custom Modules: You can create your own modules in Node.js to encapsulate and reuse specific pieces of functionality across your application. To create a custom module, use the module.exports or exports object to expose functions, objects, or classes.
  - Event Emitter: The events module is built-in and allows you to create and work with custom event emitters. This module is especially useful for handling asynchronous operations and event-driven architectures.
  - Readline: The readline module provides an interface for reading input from a readable stream, such as the command-line interface (CLI).
  - Buffer: The buffer module is used for handling binary data, such as reading or writing raw data from a stream.
