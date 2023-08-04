@@ -146,7 +146,7 @@ my-node-app/
   |- package.json
 ```
 Explanation of the Package Structure:
-```
+
 - app/: This directory contains the core components of your Node.js application.
 - controllers/: Store the logic for handling HTTP requests and responses. Each controller file should correspond to specific routes or groups of related routes.
 - models/: Define data models and manage interactions with the database or other data sources.
@@ -159,7 +159,7 @@ Explanation of the Package Structure:
 - app.js (or index.js): The main entry point of your Node.js application, where you initialize the app and set up middleware.
 - package.json: The file that holds metadata about your project and its dependencies.
 By adhering to this package structure, you can maintain a well-organized application as it grows. Separating concerns into distinct directories makes your codebase more modular, scalable, and easier to maintain. As your app becomes more complex, you can expand each directory and introduce additional ones to cater to specific functionalities.
-```
+
 ## Key Dependencies
 Here are all the dependencies, including npm packages for a Node.js Express app, along with the REST client (axios) and JSON parser (body-parser):
 ```
