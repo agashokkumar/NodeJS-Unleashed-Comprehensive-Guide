@@ -318,6 +318,50 @@ fetchDataAsync();
 In conclusion, callbacks are the traditional method, Promises offer a more modern approach, and async/await provides a cleaner syntax for handling asynchronous operations in JavaScript and TypeScript. While each approach serves the same purpose, the choice depends on personal preference and the project's specific requirements. Async/await is generally considered the most readable and straightforward option for managing asynchronous code in modern JavaScript applications.
 
 
+## How to dockerize NodeJS App
+```
+FROM node:14
+
+ARG APPID=<APP_NAME>
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci --production
+COPY ./dist/apps/${APPID}/ .
+COPY apps/${APPID}/src/config ./config/
+COPY ./reference/openapi.yaml ./reference/
+COPY ./resources ./resources/
+
+
+ARG PORT=5000
+ENV PORT ${PORT}
+EXPOSE ${PORT}
+
+COPY .env.template ./.env
+
+ENTRYPOINT ["node", "main.js"]
+```
+Let's break down the Dockerfile step by step:
+
+- FROM node:14: It uses the official Node.js 14 Docker image as the base image to build upon.
+ARG APPID=<APP_NAME>: Defines an argument named "APPID" with a default value "<APP_NAME>". You can pass a specific value for "APPID" during the Docker image build if needed.
+- WORKDIR /app: Sets the working directory inside the container to "/app".
+- COPY package.json package-lock.json ./: Copies the "package.json" and "package-lock.json" files to the working directory in the container.
+- RUN npm ci --production: Runs "npm ci" command to install production dependencies only. This is more efficient than "npm install" as it leverages the "package-lock.json" to ensure deterministic installations.
+- COPY ./dist/apps/${APPID}/ .: Copies the build output (assuming in "dist/apps/<APP_NAME>") of your Node.js app to the working directory in the container.
+- COPY apps/${APPID}/src/config ./config/: Copies the application configuration files (from "apps/<APP_NAME>/src/config") to a "config" directory in the container.
+- COPY ./reference/openapi.yaml ./reference/: Copies the "openapi.yaml" file (presumably an OpenAPI specification) to a "reference" directory in the container.
+- COPY ./resources ./resources/: Copies the "resources" directory to a "resources" directory in the container.
+- ARG PORT=3000: Defines an argument named "PORT" with a default value of 3000. You can set a different value for "PORT" during the Docker image build if necessary.
+- ENV PORT ${PORT}: Sets the environment variable "PORT" inside the container to the value provided in the "PORT" argument or the default value 3000.
+- EXPOSE ${PORT}: Exposes the port specified by the "PORT" environment variable. This means that this port will be available to the outside world when running the container.
+- COPY .env.template ./.env: Copies the ".env.template" file to ".env" in the container. This likely sets up environment variables for your Node.js app.
+- ENTRYPOINT ["node", "main.js"]: Specifies the entry point command to run when the container starts. In this case, it runs the "main.js" file using the Node.js interpreter.
+
+ When building the image, you can pass values for the "APPID" and "PORT" arguments if you have specific app names or port requirements.
+
+
+
 
 
 
