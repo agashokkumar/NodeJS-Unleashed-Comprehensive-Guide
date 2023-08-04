@@ -15,7 +15,7 @@
 - [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javascript-and-typescript-callbacks-promises-and-asyncawait)
 - [How to dockerize NodeJS App](#How-to-dockerize-NodeJS-App)
 - [Node.js App Deployment: The Power of Reverse Proxies](#Nodejs-App-Deployment-The-Power-of-Reverse-Proxies)
-- [Seamless Deployments to EC2, ECS, and EKS: Efficiently Scaling and Managing Applications on AWS](#Seamless-Deployments-to-EC2-ECS-and-EKS-Efficiently- Scaling-and-Managing-Applications-on-AWS)
+- [Seamless Deployments to EC2/ECS/EKS: Efficiently Scaling and Managing Applications on AWS](#Seamless-Deployments-to-EC2ECSEKS-Efficiently- Scaling-and-Managing-Applications-on-AWS)
   
 ## Efficient and Scalable JavaScript Runtime for Web Applications
 
