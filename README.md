@@ -628,6 +628,168 @@ Monitor your EKS cluster and app using Kubernetes tools like kubectl, kubectl lo
 EKS provides automatic scaling for your worker nodes based on the workload. Additionally, you can scale your app's replicas or update your app to a new version by applying new Kubernetes configurations.
 Remember to follow best practices for securing your EKS cluster, managing permissions, and optimizing performance. AWS provides several managed services and tools to simplify EKS deployments, such as AWS EKS Managed Node Groups, AWS Fargate for EKS, and AWS App Mesh for service mesh capabilities. These services can help streamline the deployment process and provide additional features for your Node.js app running on EKS.
 
+Deploying an EKS cluster using Terraform involves several steps. Below is an example Terraform code to create an EKS cluster, a Node Group with worker nodes, and deploy a sample Kubernetes Deployment and Service for a Node.js app:
+
+```
+provider "aws" {
+  region = "us-west-2"  # Change to your desired AWS region
+}
+
+# Create an EKS cluster
+resource "aws_eks_cluster" "example_cluster" {
+  name     = "example-cluster"
+  role_arn = aws_iam_role.example_cluster.arn
+  vpc_config {
+    subnet_ids = ["subnet-1234567890", "subnet-0987654321"]  # Replace with your desired subnet IDs
+  }
+
+  depends_on = [
+    aws_iam_role_policy_attachment.eks_cluster,
+  ]
+}
+
+# Create an IAM role and policy for the EKS cluster
+resource "aws_iam_role" "example_cluster" {
+  name = "example-eks-cluster"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect    = "Allow"
+        Action    = "sts:AssumeRole"
+        Principal = {
+          Service = "eks.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "eks_cluster" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+  role       = aws_iam_role.example_cluster.name
+}
+
+# Create an IAM role and policy for the EKS Node Group
+resource "aws_iam_role" "example_node_group" {
+  name = "example-eks-node-group"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect    = "Allow"
+        Action    = "sts:AssumeRole"
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "eks_node_group" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+  role       = aws_iam_role.example_node_group.name
+}
+
+resource "aws_iam_role_policy_attachment" "eks_cni" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+  role       = aws_iam_role.example_node_group.name
+}
+
+resource "aws_iam_role_policy_attachment" "ssm" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+  role       = aws_iam_role.example_node_group.name
+}
+
+# Create the EKS Node Group
+resource "aws_eks_node_group" "example_node_group" {
+  cluster_name    = aws_eks_cluster.example_cluster.name
+  node_group_name = "example-node-group"
+  node_role_arn   = aws_iam_role.example_node_group.arn
+  subnet_ids      = ["subnet-1234567890", "subnet-0987654321"]  # Replace with your desired subnet IDs
+
+  scaling_config {
+    desired_size = 2
+    max_size     = 3
+    min_size     = 1
+  }
+
+  depends_on = [
+    aws_eks_cluster.example_cluster,
+  ]
+}
+
+# Kubernetes Configuration
+data "template_file" "nodejs_deployment" {
+  template = file("nodejs_deployment.yaml")  # Replace with your Node.js app's Kubernetes Deployment YAML
+}
+
+data "template_file" "nodejs_service" {
+  template = file("nodejs_service.yaml")  # Replace with your Node.js app's Kubernetes Service YAML
+}
+
+# Deploy the Kubernetes Deployment and Service
+resource "kubernetes_deployment" "example_deployment" {
+  metadata {
+    name = "example-deployment"
+    labels = {
+      app = "example-app"
+    }
+  }
+
+  spec {
+    replicas = 2  # Number of replicas (pods) you want to run
+    selector {
+      match_labels = {
+        app = "example-app"
+      }
+    }
+
+    template {
+      metadata {
+        labels = {
+          app = "example-app"
+        }
+      }
+
+      spec {
+        container {
+          image = "your_ecr_repository_url:latest"  # Use ECR URL or your custom Docker image URL
+          name  = "example-app"
+          port {
+            container_port = 3000  # Node.js app's listening port
+          }
+
+          # Add other container configuration if needed
+        }
+      }
+    }
+  }
+}
+
+resource "kubernetes_service" "example_service" {
+  metadata {
+    name = "example-service"
+  }
+
+  spec {
+    selector = {
+      app = kubernetes_deployment.example_deployment.spec.0.template.0.metadata[0].labels.app
+    }
+
+    port {
+      port        = 80
+      target_port = 3000  # Node.js app's container port
+    }
+
+    type = "LoadBalancer"  # Use "LoadBalancer" for public access or "ClusterIP" for internal access
+  }
+}
+
+```
 
 
 
