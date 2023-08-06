@@ -11,7 +11,7 @@
 - [Node.js Project Structure](#nodejs-project-structure)
 - [How to create an Express Node.js application](#how-to-create-an-express-nodejs-application)
 - [Key Dependencies for a Node.js Express App: Essential Packages and Optional Components](#Key-Dependencies-for-a-Nodejs-Express-App-Essential-Packages-and-Optional-Components)
-- Understanding Middleware in Node.js: The Power of Intermediaries in Web Applications(#Understanding-Middleware-in-Nodejs-The-Power-of-Intermediaries-in-Web-Applications)
+- [Understanding Middleware in Node.js: The Power of Intermediaries in Web Applications](#Understanding-Middleware-in-Nodejs-The-Power-of-Intermediaries-in-Web-Applications)
 - [How to unit test node js express app](#how-to-unit-test-node-js-express-app)
 - [Handling Asynchronous Operations in JavaScript and TypeScript: Callbacks, Promises, and Async/Await](#handling-asynchronous-operations-in-javascript-and-typescript-callbacks-promises-and-asyncawait)
 - [How to dockerize NodeJS App](#How-to-dockerize-NodeJS-App)
