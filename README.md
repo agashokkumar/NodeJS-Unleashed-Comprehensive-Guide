@@ -19,6 +19,8 @@
   
 ## Efficient and Scalable JavaScript Runtime for Web Applications
 
+<img src="What-is.png"> 
+
 - Node.js is an open-source, server-side runtime environment built on the V8 JavaScript engine developed by Google for use in Chrome web browsers. It allows developers to run JavaScript code outside of a web browser, making it possible to use JavaScript for server-side scripting and building scalable network applications.
 
 - Node.js uses a non-blocking, event-driven I/O model, making it highly efficient and well-suited for handling multiple concurrent connections and I/O operations. This event-driven architecture, along with its single-threaded nature, allows Node.js to handle many connections efficiently, making it ideal for real-time applications, chat services, APIs, and web servers with high concurrency requirements.
