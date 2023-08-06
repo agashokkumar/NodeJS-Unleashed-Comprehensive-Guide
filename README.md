@@ -246,6 +246,53 @@ Remember, the inclusion of some packages like ejs, pug, mongodb, mongoose, seque
 
 - Middleware is a powerful concept in Node.js, as it allows developers to add reusable and modular functionality to their applications, making the code more organized and maintainable. It enables separation of concerns, as different middleware can handle specific tasks, keeping the route handlers clean and focused on the main application logic.
 
+- Now, create an app.js file (or any other filename you prefer) and add the following code:
+```
+// Import required modules
+const express = require('express');
+
+// Create an Express application
+const app = express();
+
+// Middleware function to log incoming requests
+const requestLogger = (req, res, next) => {
+  console.log(`Received ${req.method} request for ${req.url}`);
+  next(); // Call next to pass the request to the next middleware/route handler
+};
+
+// Middleware function to add a custom header to the response
+const customHeaderMiddleware = (req, res, next) => {
+  res.setHeader('X-Custom-Header', 'Hello from Middleware!');
+  next(); // Call next to pass the request to the next middleware/route handler
+};
+
+// Register middleware to be used for all routes
+app.use(requestLogger);
+app.use(customHeaderMiddleware);
+
+// Route handler for the home page
+app.get('/', (req, res) => {
+  res.send('Hello, this is the home page!');
+});
+
+// Route handler for another endpoint
+app.get('/about', (req, res) => {
+  res.send('This is the about page.');
+});
+
+// Start the server
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server started on http://localhost:${port}`);
+});
+
+```
+- In this code, we've created two middleware functions: requestLogger and customHeaderMiddleware. The requestLogger logs the details of incoming requests, while customHeaderMiddleware adds a custom header to the response.
+
+- These middleware functions are registered using the app.use() method, which ensures they will be executed for all incoming requests. Then, we define two route handlers using app.get() to handle requests for the home page and the about page.
+
+- When you run this application and visit http://localhost:3000/ or http://localhost:3000/about in your browser, you'll see the middleware in action, logging the req
+
 ## How to unit test node js express app:
 
 Unit testing is essential to ensure the correctness and reliability of your Node.js Express app. To unit test your app, you can use popular testing frameworks like Mocha and Jest. Here's a step-by-step guide on how to set up and perform unit tests for your Node.js Express app:
